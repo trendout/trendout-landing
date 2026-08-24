@@ -38,15 +38,82 @@
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Trendout",
+  "alternateName": "Trendout Sports",
   "url": "https://trendout.pt/",
-  "logo": "https://trendout.pt/logo.png",
-  "description": "Trendout é uma marca portuguesa de vestuário técnico e desportivo, equipamento de hidratação e uma app de fitness.",
+  "logo": "https://trendout.pt/favicon.png",
+  "image": "https://trendout.pt/og-image.png",
+  "description": "Trendout é uma marca portuguesa de vestuário técnico e desportivo, equipamento de hidratação e uma app de fitness. Distribui através de uma rede B2B para lojistas e parceiros em Portugal, Espanha, França, Itália, Alemanha, Reino Unido, Polónia e Países Baixos.",
   "email": "hitrendout@gmail.com",
+  "slogan": "Enjoy Life!",
+  "brand": { "@type": "Brand", "name": "Trendout" },
   "sameAs": [
     "https://www.facebook.com/trendout",
-    "https://instagram.com/trendout.pt"
+    "https://instagram.com/trendout.pt",
+    "https://www.trustpilot.com/review/trendout.pt"
   ],
-  "areaServed": ["PT", "ES", "FR", "IT", "DE", "GB", "PL", "NL"]
+  "areaServed": [
+    {"@type":"Country","name":"Portugal"},
+    {"@type":"Country","name":"Spain"},
+    {"@type":"Country","name":"France"},
+    {"@type":"Country","name":"Italy"},
+    {"@type":"Country","name":"Germany"},
+    {"@type":"Country","name":"United Kingdom"},
+    {"@type":"Country","name":"Poland"},
+    {"@type":"Country","name":"Netherlands"}
+  ],
+  "makesOffer": [
+    {"@type":"Offer","itemOffered":{"@type":"Product","name":"Vestuário técnico Trendout"}},
+    {"@type":"Offer","itemOffered":{"@type":"Product","name":"Equipamento de hidratação Trendout"}},
+    {"@type":"Offer","itemOffered":{"@type":"SoftwareApplication","name":"Trendout Sports App","applicationCategory":"HealthApplication"}}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "O que é a Trendout?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Trendout é uma marca portuguesa de vestuário técnico e desportivo, equipamento de hidratação e uma app de fitness, criada para quem vive o desporto ao máximo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Onde posso comprar produtos Trendout?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Os produtos Trendout podem ser comprados diretamente na loja online em loja.trendout.pt, com entrega em Portugal e noutros mercados europeus."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A Trendout distribui para lojistas e parceiros (B2B)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. A Trendout tem um distribuidor oficial B2B, a RSC Distribution, com catálogo completo para lojistas e parceiros em rscdist.com."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Em que países está disponível a Trendout?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Trendout está presente em Portugal, Espanha, França, Itália, Alemanha, Reino Unido, Polónia e Países Baixos, com maior volume de vendas em Portugal, Espanha e França."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A Trendout tem uma app de fitness?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim, a app oficial Trendout Sports permite registar treinos, GPS e progresso, disponível em app.trendout.es."
+      }
+    }
+  ]
 }
 </script>
 
@@ -426,6 +493,36 @@
   }
   .flag-chip.home .country{ color: var(--ice); }
 
+  /* ---------- FAQ ---------- */
+  .faq{
+    padding: 10px 24px 100px;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  .faq-head{ text-align:center; margin-bottom: 36px; }
+  .faq-head .kicker{ animation: none; opacity: 1; margin-bottom: 14px; }
+  .faq-title{
+    font-size: clamp(24px, 3.4vw, 34px);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+  .faq-item{
+    border-bottom: 1px solid var(--line);
+    padding: 22px 4px;
+  }
+  .faq-item:first-child{ border-top: 1px solid var(--line); }
+  .faq-q{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  .faq-a{
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: var(--dim);
+    font-weight: 400;
+  }
+
   /* ---------- FOOTER ---------- */
   footer{
     border-top: 1px solid var(--line);
@@ -537,6 +634,30 @@
   </div>
 </section>
 
+<section class="faq wrap">
+  <div class="faq-head">
+    <div class="kicker" data-i18n="faq-kicker">Perguntas Frequentes</div>
+    <div class="faq-title" data-i18n="faq-title">Tudo o que precisas de saber</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q" data-i18n="faq1-q">O que é a Trendout?</div>
+    <div class="faq-a" data-i18n="faq1-a">A Trendout é uma marca portuguesa de vestuário técnico e desportivo, equipamento de hidratação e uma app de fitness, criada para quem vive o desporto ao máximo.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" data-i18n="faq2-q">Onde posso comprar produtos Trendout?</div>
+    <div class="faq-a" data-i18n="faq2-a">Diretamente na nossa loja online, com entrega em Portugal e noutros mercados europeus.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" data-i18n="faq3-q">A Trendout distribui para lojistas e parceiros (B2B)?</div>
+    <div class="faq-a" data-i18n="faq3-a">Sim. A RSC Distribution é o distribuidor oficial, com catálogo completo para lojistas e parceiros.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" data-i18n="faq4-q">Em que países está disponível a Trendout?</div>
+    <div class="faq-a" data-i18n="faq4-a">Portugal, Espanha, França, Itália, Alemanha, Reino Unido, Polónia e Países Baixos — com maior volume de vendas em Portugal, Espanha e França.</div>
+  </div>
+</section>
+
 <footer>
   <div class="wrap footer-row">
     <span>hitrendout@gmail.com</span>
@@ -568,7 +689,17 @@
       "markets-kicker": "Mercados",
       "markets-title": "A crescer pelos maiores mercados da Europa",
       "c-pt": "Portugal", "c-es": "Espanha", "c-fr": "França", "c-it": "Itália",
-      "c-de": "Alemanha", "c-gb": "Reino Unido", "c-pl": "Polónia", "c-nl": "Países Baixos"
+      "c-de": "Alemanha", "c-gb": "Reino Unido", "c-pl": "Polónia", "c-nl": "Países Baixos",
+      "faq-kicker": "Perguntas Frequentes",
+      "faq-title": "Tudo o que precisas de saber",
+      "faq1-q": "O que é a Trendout?",
+      "faq1-a": "A Trendout é uma marca portuguesa de vestuário técnico e desportivo, equipamento de hidratação e uma app de fitness, criada para quem vive o desporto ao máximo.",
+      "faq2-q": "Onde posso comprar produtos Trendout?",
+      "faq2-a": "Diretamente na nossa loja online, com entrega em Portugal e noutros mercados europeus.",
+      "faq3-q": "A Trendout distribui para lojistas e parceiros (B2B)?",
+      "faq3-a": "Sim. A RSC Distribution é o distribuidor oficial, com catálogo completo para lojistas e parceiros.",
+      "faq4-q": "Em que países está disponível a Trendout?",
+      "faq4-a": "Portugal, Espanha, França, Itália, Alemanha, Reino Unido, Polónia e Países Baixos — com maior volume de vendas em Portugal, Espanha e França."
     },
     en: {
       kicker: "Portuguese Brand · Sports Design",
@@ -586,7 +717,17 @@
       "markets-kicker": "Markets",
       "markets-title": "Growing across Europe's biggest markets",
       "c-pt": "Portugal", "c-es": "Spain", "c-fr": "France", "c-it": "Italy",
-      "c-de": "Germany", "c-gb": "United Kingdom", "c-pl": "Poland", "c-nl": "Netherlands"
+      "c-de": "Germany", "c-gb": "United Kingdom", "c-pl": "Poland", "c-nl": "Netherlands",
+      "faq-kicker": "Frequently Asked Questions",
+      "faq-title": "Everything you need to know",
+      "faq1-q": "What is Trendout?",
+      "faq1-a": "Trendout is a Portuguese brand of technical sportswear, hydration gear and a fitness app, built for people who live sport to the fullest.",
+      "faq2-q": "Where can I buy Trendout products?",
+      "faq2-a": "Directly from our online store, with delivery in Portugal and other European markets.",
+      "faq3-q": "Does Trendout distribute to retailers and partners (B2B)?",
+      "faq3-a": "Yes. RSC Distribution is the official distributor, with a full catalogue for retailers and partners.",
+      "faq4-q": "Which countries is Trendout available in?",
+      "faq4-a": "Portugal, Spain, France, Italy, Germany, United Kingdom, Poland and Netherlands — with the highest sales volume in Portugal, Spain and France."
     },
     es: {
       kicker: "Marca Portuguesa · Diseño Deportivo",
@@ -604,7 +745,17 @@
       "markets-kicker": "Mercados",
       "markets-title": "Creciendo en los mayores mercados de Europa",
       "c-pt": "Portugal", "c-es": "España", "c-fr": "Francia", "c-it": "Italia",
-      "c-de": "Alemania", "c-gb": "Reino Unido", "c-pl": "Polonia", "c-nl": "Países Bajos"
+      "c-de": "Alemania", "c-gb": "Reino Unido", "c-pl": "Polonia", "c-nl": "Países Bajos",
+      "faq-kicker": "Preguntas Frecuentes",
+      "faq-title": "Todo lo que necesitas saber",
+      "faq1-q": "¿Qué es Trendout?",
+      "faq1-a": "Trendout es una marca portuguesa de ropa técnica deportiva, equipo de hidratación y una app de fitness, creada para quien vive el deporte al máximo.",
+      "faq2-q": "¿Dónde puedo comprar productos Trendout?",
+      "faq2-a": "Directamente en nuestra tienda online, con envío a Portugal y otros mercados europeos.",
+      "faq3-q": "¿Trendout distribuye a tiendas y socios (B2B)?",
+      "faq3-a": "Sí. RSC Distribution es el distribuidor oficial, con catálogo completo para tiendas y socios.",
+      "faq4-q": "¿En qué países está disponible Trendout?",
+      "faq4-a": "Portugal, España, Francia, Italia, Alemania, Reino Unido, Polonia y Países Bajos — con mayor volumen de ventas en Portugal, España y Francia."
     },
     fr: {
       kicker: "Marque Portugaise · Design Sportif",
@@ -622,7 +773,17 @@
       "markets-kicker": "Marchés",
       "markets-title": "En croissance dans les plus grands marchés d'Europe",
       "c-pt": "Portugal", "c-es": "Espagne", "c-fr": "France", "c-it": "Italie",
-      "c-de": "Allemagne", "c-gb": "Royaume-Uni", "c-pl": "Pologne", "c-nl": "Pays-Bas"
+      "c-de": "Allemagne", "c-gb": "Royaume-Uni", "c-pl": "Pologne", "c-nl": "Pays-Bas",
+      "faq-kicker": "Questions Fréquentes",
+      "faq-title": "Tout ce qu'il faut savoir",
+      "faq1-q": "Qu'est-ce que Trendout ?",
+      "faq1-a": "Trendout est une marque portugaise de vêtements techniques de sport, d'équipement d'hydratation et d'une app de fitness, conçue pour ceux qui vivent le sport à fond.",
+      "faq2-q": "Où puis-je acheter des produits Trendout ?",
+      "faq2-a": "Directement sur notre boutique en ligne, avec livraison au Portugal et dans d'autres marchés européens.",
+      "faq3-q": "Trendout distribue-t-elle aux revendeurs et partenaires (B2B) ?",
+      "faq3-a": "Oui. RSC Distribution est le distributeur officiel, avec un catalogue complet pour revendeurs et partenaires.",
+      "faq4-q": "Dans quels pays Trendout est-elle disponible ?",
+      "faq4-a": "Portugal, Espagne, France, Italie, Allemagne, Royaume-Uni, Pologne et Pays-Bas — avec le plus gros volume de ventes au Portugal, en Espagne et en France."
     }
   };
 
